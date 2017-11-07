@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.neilcastellino.bonvoyage.Register"
+    tools:showIn="@layout/activity_register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/reg_conf_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Rbtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_conf_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Register"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.neilcastellino.bonvoyage.Date_andDay"
+    tools:showIn="@layout/activity_date_and_day">
+
+    <TextView
+        android:id="@+id/date_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="Select the date of your trip"
+        android:textColor="#000000"
+        android:textSize="27dp" />
+
+    <EditText
+        android:id="@+id/date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_title"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:clickable="false"
+        android:ems="6"
+        android:gravity="center"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/date_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/date_value"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="Select Date"
+        android:textColor="#1565c0"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/day_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_click"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="Enter the number of days"
+        android:textColor="#000000"
+        android:textSize="27dp" />
+
+    <EditText
+        android:id="@+id/day_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:ems="9"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="27dp" />
+
+    <Button
+        android:id="@+id/submit_date"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="Confirm"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+</RelativeLayout>

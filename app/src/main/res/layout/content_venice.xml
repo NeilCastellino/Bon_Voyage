@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.neilcastellino.bonvoyage.Venice"
+    tools:showIn="@layout/activity_venice">
+
+    <HorizontalScrollView
+        android:id="@+id/d5f1"
+        android:layout_width="352dp"
+        android:layout_height="232dp"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ven4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ven2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ven3" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/d5f2"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@id/d5f1">
+
+        <TextView
+            android:id="@+id/ve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Venice"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <ScrollView
+            android:id="@+id/sc_ve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ve">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Venice, capital of northern Italy’s Veneto region, is built on more than 100 small islands in a marshy lagoon in the Adriatic Sea. Its stone palaces seemingly rise out of the water. There are no cars or roadways, just canals and boats. The Grand Canal snakes through the city, which is filled with innumerable narrow, mazelike alleys and small squares."
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/hotels_title_ve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/ve_h1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Hilton Molino Stucky Venice"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ve_h2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2.Hotel IRIS"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

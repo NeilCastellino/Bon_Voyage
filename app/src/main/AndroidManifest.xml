@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neilcastellino.bonvoyage">
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BonVoyage"
+        android:allowBackup="true"
+        android:icon="@drawable/o"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Homepage"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Destinations"
+            android:label="@string/title_activity_destinations"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewYork"
+            android:label="@string/title_activity_new_york"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dubai"
+            android:label="@string/title_activity_dubai"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".London"
+            android:label="@string/title_activity_london"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Malaysia"
+            android:label="@string/title_activity_malaysia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Paris"
+            android:label="@string/title_activity_paris"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Venice"
+            android:label="@string/title_activity_venice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ThePlazaHotel"
+            android:label="@string/title_activity_the_plaza_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TheGreenwichHotel"
+            android:label="@string/title_activity_the_greenwich_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AceHotel"
+            android:label="@string/title_activity_ace_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CorinthiaHotel"
+            android:label="@string/title_activity_corinthia_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LondonBridgeHotel"
+            android:label="@string/title_activity_london_bridge_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StGeorgeHotel"
+            android:label="@string/title_activity_st_george_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ArmaniHotel"
+            android:label="@string/title_activity_armani_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BayviewHotel"
+            android:label="@string/title_activity_bayview_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LeMeridienHotel"
+            android:label="@string/title_activity_le_meridien_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GrandHyatt"
+            android:label="@string/title_activity_grand_hyatt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotelSaintGermain"
+            android:label="@string/title_activity_hotel_saint_germain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LeBristolHotel"
+            android:label="@string/title_activity_le_bristol_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HiltonHotel"
+            android:label="@string/title_activity_hilton_hotel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotelIris"
+            android:label="@string/title_activity_hotel_iris"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Book"
+            android:label="@string/title_activity_book"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Date_andDay"
+            android:label="@string/title_activity_date_and_day"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

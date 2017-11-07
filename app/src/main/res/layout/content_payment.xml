@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.neilcastellino.bonvoyage.Book"
+    tools:showIn="@layout/activity_payment">
+
+    <TextView
+        android:id="@+id/payment_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Payment By :"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/select_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/credit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:text="Credit Card"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/debit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:text="Debit Card"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/visa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:text="Visa"
+            android:textSize="30sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/master_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:text="Master Card"
+            android:textSize="30sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/american_express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:text="American Express"
+            android:textSize="30sp"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/card_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Card No"
+        android:inputType="number"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:text="Pay"
+        android:textSize="25dp" />
+</RelativeLayout>

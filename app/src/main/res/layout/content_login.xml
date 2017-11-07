@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.neilcastellino.bonvoyage.Login"
+    tools:showIn="@layout/activity_login">
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/login_nyr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:gravity="top"
+        android:text="Not yet Registered?"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/login_nyr"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Register" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/ortext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/register_button"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="OR"-->
+        <!--android:textSize="20sp" />-->
+
+    <!--<com.google.android.gms.common.SignInButton-->
+        <!--android:id="@+id/login_with_google"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@id/ortext"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp" />-->
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button_fb"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@id/login_with_google"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp" />-->
+</RelativeLayout>
